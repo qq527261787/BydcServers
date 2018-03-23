@@ -1,4 +1,4 @@
-package com.swjtu.roadCheck.web.exception;
+package com.swjtu.BydcServers.web.exception;
 
 /**
  * Created by Administrator on 2017/10/15.

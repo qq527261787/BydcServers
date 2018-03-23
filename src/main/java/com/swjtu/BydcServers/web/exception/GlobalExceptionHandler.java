@@ -1,9 +1,9 @@
-package com.swjtu.roadCheck.web.exception;
+package com.swjtu.BydcServers.web.exception;
 
-import com.swjtu.roadCheck.util.JsonResult;
-import com.swjtu.roadCheck.util.enums.StatusCode;
-import com.swjtu.roadCheck.web.exception.base.*;
-import com.swjtu.roadCheck.web.exception.base.CustomException;
+import com.swjtu.BydcServers.util.JsonResult;
+import com.swjtu.BydcServers.util.enums.StatusCode;
+import com.swjtu.BydcServers.web.exception.base.*;
+import com.swjtu.BydcServers.web.exception.base.CustomException;
 import org.slf4j.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

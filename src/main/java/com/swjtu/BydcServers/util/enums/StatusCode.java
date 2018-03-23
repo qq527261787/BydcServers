@@ -1,4 +1,4 @@
-package com.swjtu.roadCheck.util.enums;
+package com.swjtu.BydcServers.util.enums;
 
 /**
  * Created by Administrator on 2017/10/15.

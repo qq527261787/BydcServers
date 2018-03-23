@@ -1,8 +1,6 @@
 package com.swjtu.BydcServers.web.controller;
 
 import com.google.gson.Gson;
-import com.swjtu.BydcServers.entity.Admin;
-import com.swjtu.BydcServers.service.IAdminService;
 import com.swjtu.BydcServers.util.JsonResult;
 import com.swjtu.BydcServers.util.PageResult;
 import com.swjtu.BydcServers.util.enums.StatusCode;

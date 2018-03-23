@@ -1,7 +1,7 @@
-package com.swjtu.roadCheck.util;
+package com.swjtu.BydcServers.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.swjtu.roadCheck.util.enums.StatusCode;
+import com.swjtu.BydcServers.util.enums.StatusCode;
 
 /**
  * Created by Administrator on 2017/10/15.
