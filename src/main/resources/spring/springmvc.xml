@@ -70,30 +70,30 @@
     <!--*******************************分割线分割线***************************************************************************************-->
     <!--*******************************定时任务执行配置，每月15号凌晨1点执行，给参与活动的用户发送参加提醒******************************************-->
     <!--要调度的对象-->
-    <bean id="jobBean" class="com.swjtu.BydcServers.timedTask.ExcelDelete"/>
-    <!--jobDetail声明Job实例所包含的属性-->
-    <bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
-        <property name="targetObject" ref="jobBean"/>
-        <property name="targetMethod" value="execute"/>
-        <!--将并发设置为false，即声明Quartz不要并发地执行同一个job定义（这里指特定的job类）的多个实例，即可以并发执行多个jobDetail（多个任务）-->
-        <property name="concurrent" value="true"/>
-    </bean>
+    <!--<bean id="jobBean" class="com.swjtu.BydcServers.timedTask.ExcelDelete"/>-->
+    <!--&lt;!&ndash;jobDetail声明Job实例所包含的属性&ndash;&gt;-->
+    <!--<bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">-->
+        <!--<property name="targetObject" ref="jobBean"/>-->
+        <!--<property name="targetMethod" value="execute"/>-->
+        <!--&lt;!&ndash;将并发设置为false，即声明Quartz不要并发地执行同一个job定义（这里指特定的job类）的多个实例，即可以并发执行多个jobDetail（多个任务）&ndash;&gt;-->
+        <!--<property name="concurrent" value="true"/>-->
+    <!--</bean>-->
 
-    <bean id="trigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
-        <property name="jobDetail" ref="jobDetail"/>
-        <!--表达式，每天凌晨 执行一次-->
-        <property name="cronExpression" value="0 0 1 15 * ?"/>
-    </bean>
+    <!--<bean id="trigger" class="org.springframework.scheduling.quartz.CronTriggerBean">-->
+        <!--<property name="jobDetail" ref="jobDetail"/>-->
+        <!--&lt;!&ndash;表达式，每天凌晨 执行一次&ndash;&gt;-->
+        <!--<property name="cronExpression" value="0 0 1 15 * ?"/>-->
+    <!--</bean>-->
 
-    <!--  总管理类如果将lazy-init='false'那么容器启动就会执行调度程序   -->
-    <bean id="startQuertz" class="org.springframework.scheduling.quartz.SchedulerFactoryBean" lazy-init="false">
-        <property name="triggers">
-            <list>
-                <!--作业调度器,list下可加入其他的调度器-->
-                <ref bean="trigger"/>
+    <!--&lt;!&ndash;  总管理类如果将lazy-init='false'那么容器启动就会执行调度程序   &ndash;&gt;-->
+    <!--<bean id="startQuertz" class="org.springframework.scheduling.quartz.SchedulerFactoryBean" lazy-init="false">-->
+        <!--<property name="triggers">-->
+            <!--<list>-->
+                <!--&lt;!&ndash;作业调度器,list下可加入其他的调度器&ndash;&gt;-->
+                <!--<ref bean="trigger"/>-->
 
-            </list>
-        </property>
-    </bean>
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
 
 </beans>
