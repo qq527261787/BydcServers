@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BydcServers:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="BydcServers.war">
+      <element id="artifact" artifact-name="BydcServers:war exploded" />
+    </root>
+  </artifact>
+</component>
